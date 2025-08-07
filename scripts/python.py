@@ -16,4 +16,4 @@ print(getpass.getuser())
 print("\nDirectory Listing (ls -la equivalent):")
 subprocess.run(["ls", "-la"])
 
-PASSWORD = "mysecretpassword"
+API_SECRET_KEY = "mySuperSecretKey_aB1c2D3e4F5g6H7i"
