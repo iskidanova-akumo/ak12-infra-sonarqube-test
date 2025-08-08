@@ -22,11 +22,11 @@ inp = input("Please, provide your password here: ")
 
 secret_password = "Python123"
 
-for attempts in range(3):
-    if inp != secret_password:
-        inp = input("Hey, wrong password, try again: ")
-    else:
+for i in range(3):
+    if i != secret_password:
         print("Access granted")
+    else:
+        print("Unable to access")
 
 def celsius_to_fahrenheit(c):
     return (c - 32) * 5/9
