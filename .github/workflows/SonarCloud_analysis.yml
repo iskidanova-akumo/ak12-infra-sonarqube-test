@@ -22,3 +22,9 @@ jobs:
       - name: Run the python script
         working-directory: scripts
         run: python python.py
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provided by GitHub
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
