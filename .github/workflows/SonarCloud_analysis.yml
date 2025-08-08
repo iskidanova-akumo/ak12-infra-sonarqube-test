@@ -25,9 +25,6 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v5
-        # with: 
-        #   projectKey: "iskidanova-akumo"
-        #   organization: "iskidanova-akumo"
         env:
           SONAR_HOST_URL: "https://sonarcloud.io/"
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
