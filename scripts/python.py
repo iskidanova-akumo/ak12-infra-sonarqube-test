@@ -18,7 +18,6 @@ subprocess.run(["ls", "-la"])
 
 API_SECRET_KEY = "mySuperSecretKey_aB1c2D3e4F5g6H7i"
 
-inp = input("Please, provide your password here: ")
 
 secret_password = "Python123"
 
