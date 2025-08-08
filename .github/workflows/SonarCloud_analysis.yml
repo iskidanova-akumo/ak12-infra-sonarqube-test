@@ -29,6 +29,6 @@ jobs:
         #   projectKey: "iskidanova-akumo"
         #   organization: "iskidanova-akumo"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provided by GitHub
+          SONAR_HOST_URL: "https://sonarcloud.io/"
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         
