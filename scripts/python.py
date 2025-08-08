@@ -18,9 +18,15 @@ subprocess.run(["ls", "-la"])
 
 API_SECRET_KEY = "mySuperSecretKey_aB1c2D3e4F5g6H7i"
 
+inp = input("Please, provide your password here: ")
 
+secret_password = "Python123"
 
-def check_password(password):
-    if password == "mypassword123":
-        return True
-    return False
+for attempts in range(3):
+    if inp != secret_password:
+        inp = input("Hey, wrong password, try again: ")
+    else:
+        print("Access granted")
+
+def celsius_to_fahrenheit(c):
+    return (c - 32) * 5/9
