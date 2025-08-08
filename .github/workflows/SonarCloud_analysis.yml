@@ -28,3 +28,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provided by GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_ORGANIZATION: "iskidanova-akumo"
+          SONAR_PROJECT_KEY: "iskidanova-akumo"
